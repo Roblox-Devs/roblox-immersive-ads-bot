@@ -51,7 +51,7 @@ function main() {
         })
     }, 7000)    
 }
-inquirer.question("Input your cookie:", (coo) => {
+inquirer.question("Input your cookie: ", (coo) => {
     cookie = coo
     inquirer.question("PlaceID of game that will get requested with: ", (id) => {
         placeId = id
