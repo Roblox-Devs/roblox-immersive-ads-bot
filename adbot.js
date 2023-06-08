@@ -43,6 +43,7 @@ function main() {
             },
             data: JSON.parse(fs.readFileSync('config/config.json', 'utf8'))
         }).then(function(response) {
+	    console.log(response.data)
             if (Object.keys(response.data.adFulfillments).length > 0) {
                 getAdInfo(response.data.adFulfillments)
             }
